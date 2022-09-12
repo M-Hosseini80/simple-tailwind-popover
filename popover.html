@@ -9,26 +9,79 @@
 </head>
 
 <body class='bg-gray-200'>
-    <div class=" m-5 ">
+    <div class=" m-5 transition">
         <button
             class="py-2 px-4 rounded-md bg-orange-500 hover:bg-orange-600 text-white transition flex flex-row gap-2 items-center"
-            type="button" onclick="btnHandler()">
+            type="button" onclick='this.nextElementSibling.classList.toggle("hidden")'>
             Click Here!
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-5 h-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
             </svg>
         </button>
-        <div class="btnContent ">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto accusamus quam provident quaerat illum
-            saepe maiores quas asperiores quidem id? Voluptas quo quod debitis dolorem eos nihil facere ad accusamus?
+        <div class="btnContent absolute hidden bg-white rounded-md border mt-2 max-w-[350px]">
+            <div class=" p-5">
+                <a href="#">
+                    <div
+                        class=" flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50">
+                        <div class="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12"><svg
+                                width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="48" height="48" rx="8" fill="#FFEDD5"></rect>
+                                <path d="M24 11L35.2583 17.5V30.5L24 37L12.7417 30.5V17.5L24 11Z" stroke="#FB923C"
+                                    stroke-width="2"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.7417 19.8094V28.1906L24 32.3812L31.2584 28.1906V19.8094L24 15.6188L16.7417 19.8094Z"
+                                    stroke="#FDBA74" stroke-width="2"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M20.7417 22.1196V25.882L24 27.7632L27.2584 25.882V22.1196L24 20.2384L20.7417 22.1196Z"
+                                    stroke="#FDBA74" stroke-width="2"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-sm font-medium text-gray-900">Lorem ipsum </p>
+                            <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div
+                        class=" flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50">
+                        <div class="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12"><svg
+                                width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="48" height="48" rx="8" fill="#FFEDD5"></rect>
+                                <path d="M24 11L35.2583 17.5V30.5L24 37L12.7417 30.5V17.5L24 11Z" stroke="#FB923C"
+                                    stroke-width="2"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.7417 19.8094V28.1906L24 32.3812L31.2584 28.1906V19.8094L24 15.6188L16.7417 19.8094Z"
+                                    stroke="#FDBA74" stroke-width="2"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M20.7417 22.1196V25.882L24 27.7632L27.2584 25.882V22.1196L24 20.2384L20.7417 22.1196Z"
+                                    stroke="#FDBA74" stroke-width="2"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-sm font-medium text-gray-900">Lorem ipsum </p>
+                            <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="text-gray-500 bg-gray-100 p-7">
+                <span class="font-bold">Lorem ipsum</span>
+                <p>
+                    saepe maiores quas asperiores quidem id? Voluptas quo quod debitis dolorem eos nihil facere ad
+                    accusamus?
+
+                </p>
+            </div>
+
         </div>
     </div>
-    <script>
-        function btnHandler(e) {
-            console.log(e)
-        }
-    </script>
 </body>
 
 </html>
