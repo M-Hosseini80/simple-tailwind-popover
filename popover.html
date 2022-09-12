@@ -9,7 +9,26 @@
 </head>
 
 <body class='bg-gray-200'>
-
+    <div class=" m-5 ">
+        <button
+            class="py-2 px-4 rounded-md bg-orange-500 hover:bg-orange-600 text-white transition flex flex-row gap-2 items-center"
+            type="button" onclick="btnHandler()">
+            Click Here!
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+        </button>
+        <div class="btnContent ">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto accusamus quam provident quaerat illum
+            saepe maiores quas asperiores quidem id? Voluptas quo quod debitis dolorem eos nihil facere ad accusamus?
+        </div>
+    </div>
+    <script>
+        function btnHandler(e) {
+            console.log(e)
+        }
+    </script>
 </body>
 
 </html>
